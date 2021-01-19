@@ -18,7 +18,7 @@ client.on("ready", async () => {
 });
 client.on("presenceUpdate", async (message, newPresence) => {
     // If your bot is in multiple guilds then you just need to check for a particular one (good for free hosting or low power hosting)
-    if (newPresence.member.guild.id !== "779209321585704991") {
+    if (newPresence.member.guild.id !== "" {
         return;
     }
     // Check that the member is offline or a bot
@@ -28,13 +28,13 @@ client.on("presenceUpdate", async (message, newPresence) => {
     // If the user don't have any activity
     if (!newPresence.member.presence.activities[0]) {
         // then check for the supporter role, if they have it
-        if (newPresence.member.roles.cache.has("800229231187591178")) {
+        if (newPresence.member.roles.cache.has("")) {
             const embed = new Discord.MessageEmbed()
                 .setColor("#DDA0DD")
-                .setDescription(`Successfully removed <@&${"800229231187591178"}> role from ${newPresence.member}!`)
+                .setDescription(`Successfully removed <@&${""}> role from ${newPresence.member}!`)
             // then remove it and send a log of removing the role to the logging channel.
-            return newPresence.member.roles.remove("800229231187591178").then(
-                client.channels.cache.get("800230262864609302").send(embed)
+            return newPresence.member.roles.remove("").then(
+                client.channels.cache.get("").send(embed)
             );
         } else {
             // and return if the person have an activity
@@ -42,30 +42,30 @@ client.on("presenceUpdate", async (message, newPresence) => {
         }
     }
     // check whether a user have a custom status or not
-    if (newPresence.member.presence.activities[0].type !== "BTS FOREVER") {
+    if (newPresence.member.presence.activities[0].type !== "") {
         return;
     }
     // if it's a custom status then check is it your status?
-    if (newPresence.member.presence.activities[0].state === "BTS FOREVER") {
+    if (newPresence.member.presence.activities[0].state === "") {
         const embed = new Discord.MessageEmbed()
             .setColor("#DDA0DD")
-            .setDescription(`Successfully given <@&${"800229231187591178"}> role to ${newPresence.member}!`)
+            .setDescription(`Successfully given <@&${""}> role to ${newPresence.member}!`)
         // if yes then give them a role and send a log to the logging channel
-        return await newPresence.member.roles.add("800229231187591178").then(
-            client.channels.cache.get("800230262864609302").send(embed)
+        return await newPresence.member.roles.add("").then(
+            client.channels.cache.get("").send(embed)
         );
     }
     // I know i could have used else{} but it's fun to do it this way.
     // if it's not your custom status
-    if (newPresence.member.presence.activities[0].state !== "BTS FOREVER") {
+    if (newPresence.member.presence.activities[0].state !== "") {
         // then check that user have a supporter id otherwise it will stuck on the same person
-        if (newPresence.member.roles.cache.has("800229231187591178")) {
+        if (newPresence.member.roles.cache.has("")) {
             const embed = new Discord.MessageEmbed()
                 .setColor("#DDA0DD")
-                .setDescription(`Successfully removed <@&${"800229231187591178"}> role from ${newPresence.member}!`)
+                .setDescription(`Successfully removed <@&${""}> role from ${newPresence.member}!`)
             // if yes then remove the role cause they just don't wanna be a supporter anymore and also log that event
-            return newPresence.member.roles.remove("800229231187591178").then(
-                client.channels.cache.get("800230262864609302").send(embed)
+            return newPresence.member.roles.remove("").then(
+                client.channels.cache.get("").send(embed)
             );
         } else {
             // or you can return here
