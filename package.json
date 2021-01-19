@@ -1,7 +1,7 @@
 {
-  "name": "norbo",
-  "version": "1.0.0",
-  "description": "A Basic Bot!",
+  "name": "Darky",
+  "version": "2.1.0",
+  "description": "A Basic Bot for Discord!",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/LegendaryEmoji/Norbo"
+    "url": "github.com/darkfang46/Darky-Bot"
   },
   "keywords": [
     "Discord.js",
     "Bot"
   ],
-  "author": "Legendary Emoji#1742",
+  "author": "Dark Fang#7631",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.1",
