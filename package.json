@@ -1,0 +1,49 @@
+{
+  "name": "norbo",
+  "version": "1.0.0",
+  "description": "A Basic Bot!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/LegendaryEmoji/Norbo"
+  },
+  "keywords": [
+    "Discord.js",
+    "Bot"
+  ],
+  "author": "Legendary Emoji#1742",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "figlet": "^1.5.0",
+    "fs": "^0.0.2",
+    "node-fetch": "^2.6.1",
+    "util": "^0.12.3",
+    "mongoose": "^5.11.11",
+    "mal-scraper": "^2.11.2",
+    "app-store-scraper": "^0.16.3",
+    "imdb-api": "^4.4.0",
+    "moment": "^2.29.1",
+    "node-osu": "^2.2.0",
+    "google-play-scraper": "^8.0.2",
+    "canvas": "^2.6.1",
+    "node-superfetch": "^0.1.10",
+    "something-random-on-discord": "^0.0.1",
+    "superagent": "^6.1.0",
+    "aki-api": "^5.2.0",
+    "mongodb": "^3.6.2",
+    "quick.db": "^7.1.2",
+    "discord-rpc": "^3.1.4",
+    "discord-xp": "^1.0.7",
+    "canvacord": "^5.0.8",
+    "twemoji-parser": "^13.0.0",
+    "relevant-urban": "^2.0.0"
+  }
+}
