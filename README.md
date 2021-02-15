@@ -1,7 +1,7 @@
 # Darky Bot 
 - In development ⚙️
 
-- Made by - Dark Fang#7631 a.k.a Me.
+- Made by - Dark Fang~#7631 a.k.a Me.
 
 - Basic framework of bot from [here](https://github.com/LegendaryEmoji/norbo-bot)
 
